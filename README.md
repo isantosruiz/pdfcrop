@@ -29,3 +29,18 @@ Instálalas con:
 
 ```bash
 pip install PyMuPDF numpy
+
+ Nota: `PyMuPDF` es el nombre del paquete en PyPI, pero se importa como `fitz`.
+
+## Uso
+
+```python pdfcrop.py input.pdf [opciones]```
+
+# Uso básico
+`python pdf_crop_margins.py documento.pdf`
+
+# Personalizar margen y umbral
+`python pdf_crop_margins.py escaneo.pdf --margin "10px" --threshold 230 --dpi 300`
+
+# Guardar con nombre específico
+`python pdf_crop_margins.py libro.pdf -o libro_limpio.pdf --margin "0.2in"`
