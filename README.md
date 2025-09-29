@@ -41,15 +41,15 @@ python pdfcrop.py input.pdf [opciones]
 
 ### Uso básico
 ```bash
-python pdf_crop_margins.py documento.pdf
+python pdfcrop.py documento.pdf
 ```
 
 ### Personalizar margen y umbral
 ```bash
-python pdf_crop_margins.py escaneo.pdf --margin "10px" --threshold 230 --dpi 300
+python pdfcrop.py escaneo.pdf --margin "10px" --threshold 230 --dpi 300
 ```
 
 ### Guardar con nombre específico
 ```bash
-python pdf_crop_margins.py libro.pdf -o libro_limpio.pdf --margin "0.2in"
+python pdfcrop.py libro.pdf -o libro_limpio.pdf --margin "0.2in"
 ```
