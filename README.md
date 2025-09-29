@@ -39,6 +39,40 @@ pip install PyMuPDF numpy
 python pdfcrop.py input.pdf [opciones]
 ```
 
+### Argumentos
+input.pdf
+Archivo PDF de entrada
+—
+-o
+,
+--output
+Archivo de salida
+input_cropped.pdf
+--dpi
+Resolución de análisis (DPI)
+200
+--threshold
+Umbral de intensidad (0–255). Valores más bajos = más sensible
+245
+--margin
+Margen adicional (admite
+pt
+,
+mm
+,
+cm
+,
+in
+,
+px
+)
+4mm
+--quiet
+Suprime mensajes de progreso
+—
+
+## Ejemplos
+
 ### Uso básico
 ```bash
 python pdfcrop.py documento.pdf
@@ -53,3 +87,15 @@ python pdfcrop.py escaneo.pdf --margin "10px" --threshold 230 --dpi 300
 ```bash
 python pdfcrop.py libro.pdf -o libro_limpio.pdf --margin "0.2in"
 ```
+
+## Cómo funciona
+1. Cada página del PDF se convierte en una imagen en escala de grises a la resolución especificada (dpi).
+2. Se identifican los píxeles cuyo valor es menor que el threshold (considerados "contenido").
+3. Se calcula el rectángulo mínimo que contiene todo el contenido detectado.
+4. Se ajusta el cropbox de la página PDF a ese rectángulo, añadiendo el margen solicitado (convertido a puntos PDF).
+5. Las páginas sin contenido detectado se dejan sin cambios.
+
+> El proceso no modifica el contenido original (texto, vectores, imágenes), solo redefine el área visible de cada página.
+
+## Licencia
+Este proyecto es de código abierto y está disponible bajo la licencia MIT.
