@@ -39,11 +39,17 @@ pip install PyMuPDF numpy
 python pdfcrop.py input.pdf [opciones]
 ```
 
-# Uso básico
-`python pdf_crop_margins.py documento.pdf`
+### Uso básico
+```bash
+python pdf_crop_margins.py documento.pdf
+```
 
-# Personalizar margen y umbral
-`python pdf_crop_margins.py escaneo.pdf --margin "10px" --threshold 230 --dpi 300`
+### Personalizar margen y umbral
+```bash
+python pdf_crop_margins.py escaneo.pdf --margin "10px" --threshold 230 --dpi 300
+```
 
-# Guardar con nombre específico
-`python pdf_crop_margins.py libro.pdf -o libro_limpio.pdf --margin "0.2in"`
+### Guardar con nombre específico
+```bash
+python pdf_crop_margins.py libro.pdf -o libro_limpio.pdf --margin "0.2in"
+```
