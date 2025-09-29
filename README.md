@@ -49,9 +49,9 @@ python pdfcrop.py input.pdf [opciones]
 | --margin | Margen adicional (admite pt, mm, cm, in, px) | 4mm |
 | --quiet | Suprime mensajes de progreso | — |
 
-## Ejemplos
+## Ejemplos de uso
 
-### Uso básico
+### Forma básica
 ```bash
 python pdfcrop.py documento.pdf
 ```
