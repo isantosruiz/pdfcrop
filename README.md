@@ -28,7 +28,7 @@ Ideal para limpiar escaneos, ajustar documentos con márgenes excesivos o prepar
 Instálalas con:
 
 ```bash
-pip install PyMuPDF numpy
+pip install PyMuPDF numpy```
 
  Nota: `PyMuPDF` es el nombre del paquete en PyPI, pero se importa como `fitz`.
 
