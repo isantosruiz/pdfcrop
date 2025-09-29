@@ -40,36 +40,14 @@ python pdfcrop.py input.pdf [opciones]
 ```
 
 ### Argumentos
-input.pdf
-Archivo PDF de entrada
-—
--o
-,
---output
-Archivo de salida
-input_cropped.pdf
---dpi
-Resolución de análisis (DPI)
-200
---threshold
-Umbral de intensidad (0–255). Valores más bajos = más sensible
-245
---margin
-Margen adicional (admite
-pt
-,
-mm
-,
-cm
-,
-in
-,
-px
-)
-4mm
---quiet
-Suprime mensajes de progreso
-—
+| ARGUMENTO | DESCRIPCIÓN | VALOR POR DEFECTO |
+| --- | --- | --- |
+| input.pdf | Archivo PDF de entrada | — |
+| -o, --output | Archivo de salida | input_cropped.pdf |
+| --dpi | Resolución de análisis (DPI) | 200 |
+| --threshold | Umbral de intensidad (0–255). Valores más bajos = más sensible | 245 |
+| --margin | Margen adicional (admite pt, mm, cm, in, px) | 4mm |
+| --quiet | Suprime mensajes de progreso | — |
 
 ## Ejemplos
 
