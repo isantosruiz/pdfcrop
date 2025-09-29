@@ -7,7 +7,7 @@ Ideal para limpiar escaneos, ajustar documentos con márgenes excesivos o prepar
 
 ---
 
-## 📌 Características
+## Características
 
 - **Detección inteligente de contenido**: rasteriza cada página y encuentra el cuadro delimitador del contenido no blanco.
 - **Margen personalizable**: define el espacio adicional a conservar alrededor del contenido (admite unidades: `pt`, `mm`, `cm`, `in`, `px`).
@@ -18,7 +18,7 @@ Ideal para limpiar escaneos, ajustar documentos con márgenes excesivos o prepar
 
 ---
 
-## 🛠️ Requisitos
+## Requisitos
 
 - Python 3.7+
 - Dependencias:
