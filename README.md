@@ -28,13 +28,16 @@ Ideal para limpiar escaneos, ajustar documentos con márgenes excesivos o prepar
 Instálalas con:
 
 ```bash
-pip install PyMuPDF numpy```
+pip install PyMuPDF numpy
+```
 
  Nota: `PyMuPDF` es el nombre del paquete en PyPI, pero se importa como `fitz`.
 
 ## Uso
 
-```python pdfcrop.py input.pdf [opciones]```
+```bash
+python pdfcrop.py input.pdf [opciones]
+```
 
 # Uso básico
 `python pdf_crop_margins.py documento.pdf`
